@@ -1,5 +1,7 @@
+{{#if openapi.paths.keys}}
 ## Paths
 
 {{#each openapi.paths}}
 {{>path path=. pathName=@key}}
 {{/each}}
+{{/if}}
